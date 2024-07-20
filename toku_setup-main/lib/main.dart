@@ -12,20 +12,11 @@ class Tokuapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ;
-    )
-  }
-}
-class Homapage extends StatelessWidget {
-  const Homapage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor:const Color(0xffFEF6DB),
+      home: Scaffold(
+        backgroundColor: Color(0xffFEF6DB),
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 86, 59, 49),
-          title:const Text(
+          title: Text(
             'Toku',
             style: TextStyle(color: Colors.white),
           ),
@@ -33,24 +24,24 @@ class Homapage extends StatelessWidget {
         body: Column(
           children: [
             Container(
-              padding:const EdgeInsets.only(left: 10),
+              padding: EdgeInsets.only(left: 10),
               alignment: Alignment.centerLeft,
               height: 60,
               width: double.infinity,
               color: Colors.orange,
-              child:const Text(
+              child: Text(
                 'Numbers',
                 style: TextStyle(color: Colors.white, fontSize: 15),
               ),
             ),
             Container(
-              padding:const EdgeInsets.only(left: 10),
+              padding: EdgeInsets.only(left: 10),
               alignment: Alignment.centerLeft,
               height: 60,
               width: double.infinity,
-              color:const Color(0xff2A6807),
-              child:const Text(
-                'خلاص تمام انا بس حاسس  ان تقريبا شايف',
+              color: Color(0xff2A6807),
+              child: Text(
+                ' Family Numbers',
                 style: TextStyle(color: Colors.white, fontSize: 15),
               ),
             ),
@@ -60,7 +51,7 @@ class Homapage extends StatelessWidget {
               height: 60,
               width: double.infinity,
               color: Colors.purple,
-              child: const Text(
+              child: Text(
                 'colors',
                 style: TextStyle(color: Colors.white, fontSize: 15),
               ),
@@ -71,13 +62,14 @@ class Homapage extends StatelessWidget {
               height: 60,
               width: double.infinity,
               color: Color(0xff0083DB),
-              child: Text(
+              child: const Text(
                 'phrases',
                 style: TextStyle(color: Colors.white, fontSize: 15),
               ),
             ),
           ],
         ),
-      )
+      ),
+    );
   }
 }
